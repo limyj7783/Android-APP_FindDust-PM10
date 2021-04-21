@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/LinearLayout"
+    tools:context="com.example.finedustpm10.finedustpm10.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewLocaion"
+        android:text=""
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewDateTime"
+        android:text=""
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/ImageViewKHAICondition"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/khai"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewKHAICondition"
+        android:text=""
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextVIewAirPollutionInformation"
+        android:text=""
+        android:textSize="25sp"
+        android:layout_gravity="center"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/pm10"
+            android:textSize="30sp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/pm25"
+            android:textSize="30sp"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/ImageViewPM10Condition"
+            android:contentDescription="@string/pm10"/>
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/ImageViewPM25Condition"
+            android:contentDescription="@string/pm25"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/TextViewPM10Condition"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/TextViewPM25Condition"/>
+    </GridLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonAdditionInformation"
+        android:text="@string/additional_information" />
+</LinearLayout>
